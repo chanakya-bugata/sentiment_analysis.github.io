@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <style>
+            @keyframes fadeIn {
+               0% {
+                   opacity: 0;
+               }
+               100% {
+                   opacity: 1;
+               }
+            }
+           
+            .fadeIn {
+               animation-name: fadeIn;
+               animation-duration: 4s;
+            }
+            body {
+                background-image: url('https://th.bing.com/th/id/OIG.0V7zokbmv6Fkp3M.G1ot?pid=ImgGn');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+           </style>
+           
+           <h1 class="text-center mt-5 fadeIn">Sentiment Analysis App</h1>
+        <form method="post" action="/" class="mt-5">
+            <div class="form-group">
+                <label for="text">Enter a text:</label>
+                <textarea id="text" name="text" rows="4" cols="50" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze Sentiment</button>
+        </form>
+        {% if sentiment %}
+            <div class="alert alert-success mt-3" role="alert">
+                <p>Sentiment: {{ sentiment }}</p>
+                <p>You entered: {{ user_input }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

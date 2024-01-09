@@ -1,0 +1,10 @@
+pip install flask
+pip install joblib
+pip install pandas
+pip install sklearn
+
+Flask: This is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries.
+Joblib: This is a set of tools to provide lightweight pipelining in Python. It provides utilities for saving and loading Python objects that make use of NumPy data structures, efficiently.
+Pandas: This is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+Sklearn (scikit-learn): This is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
+Please make sure to install these dependencies in your Python environment before running the code. If you have already installed these packages, then you are good to go! If you encounter any issues, feel free to ask. Happy coding! 😊
